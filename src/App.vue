@@ -7,5 +7,6 @@ import './assets/main.css'
   <NavBar/>
 </template>
 
-<style scoped>
+<style>
+
 </style>

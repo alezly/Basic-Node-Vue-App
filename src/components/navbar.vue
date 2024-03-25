@@ -49,6 +49,7 @@ export default {
   padding: 1rem 2rem;
   background-color: white;
   box-shadow: 0px 3px 6px #00000029;
+  z-index: 1;
 }
 .navbar-logo {
   display: flex;
@@ -83,7 +84,7 @@ export default {
   display: none;
   height: 2rem;
   width: 2rem;
-  position: absolute;
+  position: sticky;
   top: 1rem;
   left: 1rem;
   z-index: 2;
@@ -93,7 +94,7 @@ export default {
 .bar3 {
   width: 2rem;
   height: 3px;
-  background-color: #333;
+  background-color: #464646;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -104,9 +105,13 @@ export default {
     align-items: flex-start;
     padding: 1rem 1rem;
     flex-direction: column;
-    height: auto;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
   .navbar.show{
     transform: translateY(0);
@@ -134,7 +139,7 @@ export default {
     height: 100%;
     justify-content: flex-end;
     padding: 4rem 0;
-    font-size: 1.5rem;
+    font-size: clamp(16px, 6.25vw, 22px)
   }
   .navbar-items li {
     padding: 10px 0;
@@ -142,4 +147,12 @@ export default {
     border-top: 1px solid #ccc;
   }
 }
+@media screen and (min-width: 1920px) {
+  .navbar-logo img {
+    height: 2rem;
+  }
+
+}
+
+
 </style>

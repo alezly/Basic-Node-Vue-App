@@ -1,13 +1,51 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 #app {
-  width: 100%;
+  width: 100%; 
   margin: 0;
   padding: 0;
   color: #464646;
   font-family: "Outfit", sans-serif;
+}
+@media screen and (min-width: 600px) {
+  #app{
+    font-size: 18px;
+    /* width: 100; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #app{
+    font-size: 16px;
+    /* width: 738px; */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #app{
+    font-size: 20px;
+    /* width: 962px; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #app{
+    font-size: 18px;
+    /* width: 1250px; */
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  #app{
+    font-size: 26px;
+    /* width: 1890px; */
+  }
+}
+@media screen and (min-width: 3840px) {
+  #app{
+    font-size: 26px;
+    /* width: 3810px; */
+  }
 }
