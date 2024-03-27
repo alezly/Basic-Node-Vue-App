@@ -48,7 +48,6 @@
 .grid-container {
   display: grid;
   grid-template-columns: 40% 18% 42%;
-  height: 100vh;
 }
 .imgFocus {
   display: flex;

@@ -1,23 +1,3 @@
-<script>
-// import { RouterLink, RouterView } from 'vue-router'
-
-export default {
-  name: 'NavBar',
-  data() {
-    return {
-      showNavbar: false
-    }
-  },
-  methods: {
-    toggleNavbar() {
-      this.showNavbar = !this.showNavbar
-    },
-    hideNavbar() {
-      this.showNavbar = false
-    }
-  }
-}
-</script>
 <template>
   <button class="navbar-toggle" @click="toggleNavbar">
     <div class="bar1" :class="{ showNav: showNavbar }"></div>
@@ -40,7 +20,26 @@ export default {
   </nav>
   <RouterView />
 </template>
+<script>
+// import { RouterLink, RouterView } from 'vue-router'
 
+export default {
+  name: 'NavBar',
+  data() {
+    return {
+      showNavbar: false
+    }
+  },
+  methods: {
+    toggleNavbar() {
+      this.showNavbar = !this.showNavbar
+    },
+    hideNavbar() {
+      this.showNavbar = false
+    }
+  }
+}
+</script>
 <style scoped>
 .navbar {
   display: flex;
