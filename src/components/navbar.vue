@@ -47,8 +47,9 @@ export default {
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
-  box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 4px #00000029;
   z-index: 1;
+  width: 100%;
 }
 .navbar-logo {
   display: flex;
@@ -120,6 +121,7 @@ export default {
   }
   .navbar-toggle {
     display: inline-block;
+    position: fixed;
   }
   .bar1.showNav {
     transform: translate(0, 12px) rotate(-45deg);

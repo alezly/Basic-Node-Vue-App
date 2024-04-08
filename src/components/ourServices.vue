@@ -178,7 +178,7 @@
         </p>
       </div>
     </div>
-    <div class="imgFocus">
+    <div class="imgService">
       <img width="85%" src="../assets/LaptopAndPlant.png" />
     </div>
   </div>
@@ -188,6 +188,7 @@
   display: grid;
   grid-template-columns: 55% 45%;
   margin-top: 10vh;
+  margin-bottom: 8vh;
 }
 .mainTitle {
   padding: 0 1vw 4vw 0;
@@ -228,18 +229,32 @@
   }
   .box {
     width: 100%;
+    padding: 2rem;
   }
   .box h2 {
-    text-align: center;
+    text-align: left;
   }
   .box p {
-    text-align: center;
+    text-align: left;
+    padding: 0;
   }
   .items {
     height: 100%;
+    margin-left: 0;
+    width: 100%;
   }
   .mainTitle {
     text-align: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .mainTitle span{
+    display: none;
+  }
+  .imgService{
+    justify-content: center;
+    display: flex;
   }
 }
 </style>

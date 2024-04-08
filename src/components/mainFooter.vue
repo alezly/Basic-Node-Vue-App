@@ -1,6 +1,6 @@
 <template>
   <div class="footerContainer">
-    <div class="address">
+    <div class="address center">
       <svg
         id="Object"
         xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@
       </svg>
       Panamá
     </div>
-    <div class="email">
+    <div class="email center">
       <svg
         id="Object"
         xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +56,21 @@
   border-top: 3px solid rgb(112 112 112 / 19%);
   height: auto;
   margin: auto;
-  margin-top: 25vh;
+  margin-top: 20vh;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.email,
+.address {
+  gap: 1rem;
+  font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

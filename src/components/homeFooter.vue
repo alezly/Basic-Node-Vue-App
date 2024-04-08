@@ -1,6 +1,7 @@
 <script setup></script>
 <template>
   <div class="footerContainer">
+    <div class="filtro"></div>
     <div class="infoContainer">
       <h1>
         Comunícate con <br />
@@ -55,13 +56,22 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .footerContainer {
   width: 100%;
   height: 100vh;
-  background-image: url('../assets/footer.png');
+  background-image: url('../assets/contact-footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.7));
 }
 .infoContainer {
   height: auto;
@@ -91,5 +101,21 @@
   border-radius: 65px;
   width: 14rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .infoContainer h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .infoContainer h2 {
+    font-size: 1.2rem;
+  }
+  .infoContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 </style>

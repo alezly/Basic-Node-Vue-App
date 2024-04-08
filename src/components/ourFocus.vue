@@ -11,7 +11,7 @@
     </div>
     <div class="items">
       <div class="box">
-        <h1>1</h1>
+        <h1>1.</h1>
         <h2>Diseño Conjunto</h2>
         <p>
           Formamos equipo de trabajo contigo, donde se combina tu conocimiento profundo de la
@@ -19,7 +19,7 @@
         </p>
       </div>
       <div class="box">
-        <h1>2</h1>
+        <h1>2.</h1>
         <h2>Experiencia y reputación</h2>
         <p>
           Aportamos estructuras para la solución de problemas derivados de conceptos en el estado
@@ -27,7 +27,7 @@
         </p>
       </div>
       <div class="box">
-        <h1>3</h1>
+        <h1>3.</h1>
         <h2>Soluciones a la medida</h2>
         <p>
           Junto a ti vemos el momento en que estas y buscamos soluciones oportunas y posibles de
@@ -35,7 +35,7 @@
         </p>
       </div>
       <div class="box">
-        <h1>4</h1>
+        <h1>4.</h1>
         <h2>Foco en creación de valor</h2>
         <p>
           Asumimos retos donde tenemos confianza de generar soluciones de alto impacto al cliente.
@@ -118,6 +118,9 @@
   }
   .mainTitle{
     text-align: center;
+  }
+  .imgFocus{
+    justify-content: center;
   }
 }
 </style>
