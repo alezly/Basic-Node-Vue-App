@@ -196,11 +196,11 @@
   align-items: center;
 }
 .mainTitle h1 {
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 .mainTitle h4 {
-  font-size: clamp(40px, 8vw, 60px);
+  font-size: 3.5rem;
   font-weight: 100;
   line-height: 30px;
 }
@@ -248,6 +248,9 @@
     margin-bottom: 2rem;
     justify-content: center;
     width: 100%;
+  }
+  .mainTitle h1, .mainTitle h4{
+    font-size: 2.4rem;
   }
   .mainTitle span{
     display: none;

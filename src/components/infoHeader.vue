@@ -23,22 +23,30 @@
   width: 45%;
   text-align: justify;
 }
-.title{
+.title {
   display: flex;
   align-items: center;
 }
 .title h4 {
   font-weight: 300;
-  font-size: clamp(27px, 8vw, 24px);
+  font-size: 1.6rem;
   width: 100%;
 }
-.title span{
+.title span {
   border-top: 3px solid rgb(112 112 112 / 19%);
   width: 90%;
 }
 @media screen and (max-width: 768px) {
-  .description{
+  .description {
     width: 95%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .title h4 {
+    font-size: 1.6rem;
+  }
+  .description{
+    font-size: 1.1rem;
   }
 }
 </style>

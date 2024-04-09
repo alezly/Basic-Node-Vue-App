@@ -59,11 +59,11 @@
   flex-direction: column;
 }
 .mainTitle h1 {
-  font-size: clamp(40px, 8vw, 60px);
+  font-size: 3.5rem;
   font-weight: 400;
 }
 .mainTitle h4 {
-  font-size: clamp(40px, 8vw, 60px);
+  font-size: 3.5rem;
   font-weight: 100;
   line-height: 30px;
 }
@@ -88,17 +88,16 @@
 }
 .box h1 {
   color: #5ca5a6;
-  font-size: clamp(27px, 8vw, 100px);
+  font-size: 4rem;
 }
 .box h2 {
-  font-size: clamp(22px, 8vw, 22px);
+  font-size: 1.2rem;
   text-align: left;
   margin-bottom: 1rem;
 }
 .box p {
   font-weight: 200;
   text-align: left;
-  font-size: clamp(16px, 8vw, 16px);
 }
 @media screen and (max-width: 768px) {
   .grid-container {
@@ -107,20 +106,28 @@
   .box {
     width: 100%;
   }
-  .box h2{
+  .box h2 {
     text-align: center;
   }
-  .box p{
+  .box p {
     text-align: center;
   }
-  .items{
+  .items {
     height: 100%;
   }
-  .mainTitle{
+  .mainTitle {
     text-align: center;
   }
-  .imgFocus{
+  .mainTitle h1, .mainTitle h4{
+    font-size: 2.4rem;
+  }
+  .imgFocus {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .box h2 {
+    font-size: 1.4rem;
   }
 }
 </style>

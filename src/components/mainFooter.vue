@@ -72,5 +72,8 @@
     flex-direction: column;
     align-items: center;
   }
+  .address{
+    margin-bottom: 1rem;
+  }
 }
 </style>

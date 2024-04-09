@@ -115,6 +115,7 @@ export default {
   }
   .navbar.show{
     transform: translateY(0);
+    position: fixed;
   }
   .navbar-logo {
     display: none;
@@ -140,7 +141,7 @@ export default {
     height: 100%;
     justify-content: flex-end;
     padding: 4rem 0;
-    font-size: clamp(16px, 6.25vw, 22px)
+    font-size: 1.2rem; 
   }
   .navbar-items li {
     padding: 10px 0;
@@ -149,10 +150,9 @@ export default {
   }
 }
 @media screen and (min-width: 1920px) {
-  .navbar-logo img {
-    height: 2rem;
+  .navbar-items{
+    font-size: 1.2rem;
   }
-
 }
 
 

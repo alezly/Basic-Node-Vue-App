@@ -12,6 +12,7 @@
       <div class="gallery">
         <div
           class="slide"
+          :class="currentPhotoIndex == 0 ? 'Selected' : 'noSelected'"
           :style="{
             opacity: currentPhotoIndex == 0 ? 1 : 0.5,
             filter: currentPhotoIndex == 0 ? 'none' : 'grayscale(70%)'
@@ -21,6 +22,7 @@
         </div>
         <div
           class="slide"
+          :class="currentPhotoIndex == 1 ? 'Selected' : 'noSelected'"
           :style="{
             opacity: currentPhotoIndex == 1 ? 1 : 0.5,
             filter: currentPhotoIndex == 1 ? 'none' : 'grayscale(70%)'
@@ -30,6 +32,7 @@
         </div>
         <div
           class="slide"
+          :class="currentPhotoIndex == 2 ? 'Selected' : 'noSelected'"
           :style="{
             opacity: currentPhotoIndex == 2 ? 1 : 0.5,
             filter: currentPhotoIndex == 2 ? 'none' : 'grayscale(70%)'
@@ -37,8 +40,8 @@
         >
           <img src="../assets/duaglys.png" alt="sociaDirectiva" />
         </div>
-        <button class="arrow left" @click="changePhoto(-1)">←</button>
-        <button class="arrow right" @click="changePhoto(1)">→</button>
+        <button @click="changePhoto(-1)" class="arrow">◀</button>
+        <button @click="changePhoto(1)" class="arrow">▶</button>
       </div>
       <div class="description">
         <div class="column" :class="{ active: currentPhotoIndex === 0 }">
@@ -205,6 +208,7 @@ export default {
   gap: 0.5rem;
   margin-top: 4rem;
   justify-content: center;
+  position: relative;
 }
 
 .slide {
@@ -220,21 +224,21 @@ export default {
 
 .arrow {
   position: absolute;
-  top: 75%;
-  transform: translateY(-75%);
-  background: rgba(255, 255, 255, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
   border: none;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 20px;
   cursor: pointer;
+  color: #529FA1;
 }
 
-.arrow.left {
-  left: 8rem;
+.arrow:first-child {
+  left: 10px;
 }
 
-.arrow.right {
-  right: 8rem;
+.arrow:last-child {
+  right: 10px;
 }
 
 .description {
@@ -281,7 +285,7 @@ export default {
   .slide {
     opacity: 1;
   }
-  .arrow {
+  .noSelected{
     display: none;
   }
   .gridDescription {
@@ -299,11 +303,27 @@ export default {
   }
   .mainTitle h4 {
     margin-left: 0;
+    font-size: 2.4rem;
   }
-  .gallery{
-    grid-template-columns: 80%;
+  .mainTitle h1 {
+    font-size: 2.4rem;
+  }
+  .gallery {
+    grid-template-columns: 60%;
+    margin-top: 2rem;
+  }
+  .description{
+    margin: 1rem 8vw;
+  }
+  .nameTitle h1, .nameTitle h4{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .nameTitle{
+    justify-content: center !important;
   }
 }
+
 @media screen and (min-width: 1920px) {
   .gallery {
     width: 72%;
